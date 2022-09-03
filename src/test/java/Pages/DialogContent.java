@@ -52,17 +52,6 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//span[contains(text(),'Delete')]")
     private WebElement deleteDialogButton;
 
-    @FindBy(xpath = "(//ms-text-field//input)[3]")
-    private WebElement name_F;
-
-    @FindBy(xpath = "(//ms-text-field//input)[4]")
-    private WebElement code_F;
-
-    @FindBy(xpath = "(//mat-select[@role]//div[@cdk-overlay-origin])[2]")
-    private WebElement fieldType;
-
-    @FindBy (xpath = "(//mat-option[@role='option'])[2]")
-    private WebElement text;
 
     WebElement myElement;
 
@@ -80,12 +69,6 @@ public class DialogContent extends Parent {
                 break;
             case "searchInputTwo":
                 myElement = searchInputTwo;
-                break;
-            case "name_F":
-                myElement = name_F;
-                break;
-            case "code_F":
-                myElement = code_F;
                 break;
 
 
@@ -125,12 +108,7 @@ public class DialogContent extends Parent {
             case "deleteDialogButton":
                 myElement = deleteDialogButton;
                 break;
-            case "fieldType":
-                myElement = fieldType;
-                break;
-            case "text":
-                myElement = text;
-                break;
+
 
         }
         clickFunction(myElement);
